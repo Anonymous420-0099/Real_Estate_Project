@@ -1,0 +1,7 @@
+.l-container {
+  gap: 1rem;
+  justify-content: space-between !important;
+}
+.l-container > img {
+  width: 9rem;
+}

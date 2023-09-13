@@ -1,0 +1,49 @@
+.modes {
+  width: 16rem;
+  padding: 1rem;
+  border: 0.8px solid rgba(128, 128, 128, 0.143);
+  border-radius: 5px;
+  gap: 1rem;
+  transition: all 300ms ease-in;
+  display: flex;
+  flex-direction: column;
+}
+.modes > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.mode {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.modes .button {
+  font-size: 0.9rem;
+  color: var(--blue);
+  background: var(--lightBlue);
+  width: 100%;
+  font-weight: 600;
+}
+.mode .primaryText {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.modes:hover {
+  scale: 1.1;
+  box-shadow: var(--shadow);
+}
+.modes .button:hover {
+  background: var(--blue-gradient);
+  color: white;
+  scale: 0.8;
+}
+@media (max-width: 1024px) {
+  .mode {
+    width: 100%;
+  }
+  .modes {
+    width: 100%;
+  }
+}
